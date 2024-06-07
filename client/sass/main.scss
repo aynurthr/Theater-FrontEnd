@@ -1,0 +1,18 @@
+@import "base/reset";
+@import "base/typography";
+@import "utils/mixins";
+@import "utils/variables";
+
+@import "components/buttons";
+@import "layout/container";
+@import "layout/footer";
+@import "layout/navbar";
+@import "pages/home";
+@import "pages/about";
+@import "pages/login";
+@import "pages/register";
+@import "pages/all-news";
+@import "pages/news-details";
+@import "pages/posters";
+@import "pages/posters-details";
+@import "pages/buy-ticket";

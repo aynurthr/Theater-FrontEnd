@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../sass/main.css" />
+    <link rel="icon" type="image/x-icon" href="../../media/icons/theater.svg" />
+    <title>Казанский театр юного зрителя</title>
+  </head>
+  <body id="Home">
+    <section class="navbar">
+      <div class="container">
+        <div>
+          <a class="navbar__logo" href="../../pages/home/index.html">
+            <img src="../../media/icons/theater.svg" alt="Theater logo" />
+          </a>
+          <nav class="navbar__menu">
+            <a href="../home/index.html">Главная</a>
+            <a href="../posters/index.html">Афиша</a>
+            <a href="../all-news/index.html">Новости</a>
+            <a href="../about/index.html">О театре</a>
+          </nav>
+        </div>
+        <div class="navbar__actions">
+          <a href="../login/index.html" class="btn btn--login">Войти</a>
+          <a href="../register/index.html" class="btn btn--register"
+            >Регистрация</a
+          >
+        </div>
+        <div class="navbar__burger" id="burger-btn">
+          <img src="../../media/icons/burger.svg" alt="Burger icon" />
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="hero__top">
+        <div class="hero__top__shadow"></div>
+        <div class="container">
+          <div class="hero__info">
+            <div class="hero__info-item">
+              <span>Дата основания</span>
+              <strong>1932 год</strong>
+            </div>
+            <div class="hero__info-item">
+              <span>2020-2021 год</span>
+              <strong>34 спектакля</strong>
+            </div>
+            <div class="hero__info-item">
+              <span>Абсолютно для всех</span>
+              <strong>0+</strong>
+            </div>
+          </div>
+          <div class="hero__heading">
+            <h1>Казанский театр юного зрителя</h1>
+          </div>
+        </div>
+      </div>
+      <div class="hero__bottom">
+        <div class="container">
+          <div class="hero__info">
+            <div class="hero__info-item">
+              <span>Дата основания</span>
+              <strong>1932 год</strong>
+            </div>
+            <div class="hero__info-item">
+              <span>2020-2021 год</span>
+              <strong>34 спектакля</strong>
+            </div>
+            <div class="hero__info-item">
+              <span>Абсолютно для всех</span>
+              <strong>0+</strong>
+            </div>
+          </div>
+          <a href="../about/index.html" class="hero__link">Узнать подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="premieres">
+      <div class="container">
+        <h1>Ближайшие премьеры</h1>
+        <div class="premieres__shows" id="premieres-shows"></div>
+      </div>
+    </section>
+
+    <section class="info">
+      <div class="container">
+        <a href="#" class="info-button">Правила поведения</a>
+        <a href="#" class="info-button">Панорама зала</a>
+        <a href="#" class="info-button">История театра</a>
+        <a href="#" class="info-button">Коллектив театра</a>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="container">
+        <div class="news__top">
+          <h1>Новости театра</h1>
+          <a href="../all-news/index.html" class="show-all">
+            <p>Показать все</p>
+            <img
+              class="arrow-icon"
+              src="../../media/icons/arrow.svg"
+              alt="arrow icon"
+            />
+          </a>
+        </div>
+
+        <div class="news-wrapper" id="news-wrapper">
+          <!-- The news items will be dynamically inserted here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__left">
+            <div class="footer-logo">
+              <img src="../../media/icons/theater.svg" alt="Theater logo" />
+              <h3>Казанский театр юного зрителя</h3>
+            </div>
+            <p>Присоединяйтесь к нашему сообществу</p>
+            <div class="footer-social-icons">
+              <a href="#"
+                ><img src="../../media/icons/youtube.svg" alt="Youtube Logo"
+              /></a>
+              <a href="#"
+                ><img src="../../media/icons/twitter.svg" alt="Twitter Logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../../media/icons/instagram.svg"
+                  alt="Instagram Logo"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-top__middle">
+            <div class="footer-top__middle__header"><h3>Изучать</h3></div>
+            <div class="footer-links">
+              <a href="../home/index.html">Главная</a>
+              <a href="../posters/index.html">Афиша</a>
+              <a href="../all-news/index.html">Новости</a>
+              <a href="../about/index.html">О театре</a>
+            </div>
+          </div>
+          <div class="footer-top__right">
+            <div class="footer-top__right__header">
+              <h3>Подпишитесь на нашу рассылку</h3>
+            </div>
+            <p>
+              Получайте эксклюзивные акции и обновления прямо на ваш почтовый
+              ящик.
+            </p>
+            <form action="" class="email-form">
+              <input
+                type="email"
+                placeholder="Введите ваш email"
+                class="email-input"
+              />
+              <button type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__divider"></div>
+          <p>Ⓒ Казанский ТЮЗ.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../../common/posters.js"></script>
+    <script type="module" src="../../common/news-script.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

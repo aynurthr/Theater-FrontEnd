@@ -1,0 +1,76 @@
+#Register {
+  > .auth > .container {
+    display: flex;
+    column-gap: 30px;
+
+    .auth {
+      &__image {
+        flex: 1;
+        img {
+          width: 540px;
+          height: 540px;
+          object-fit: cover;
+          border: #e7e7e8 10px solid;
+        }
+      }
+
+      &__form {
+        height: 540px;
+        flex: 1;
+        background-color: #333;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+
+        h1 {
+          font-size: 36px;
+          margin-bottom: 20px;
+        }
+
+        p {
+          margin-bottom: 40px;
+          font-size: 18px;
+          text-align: center;
+        }
+
+        form {
+          width: 100%;
+          max-width: 400px;
+
+          .input-group {
+            margin-bottom: 20px;
+            position: relative;
+
+            input {
+              width: 100%;
+              padding: 15px;
+              border: none;
+              border-radius: 5px;
+              font-size: 16px;
+              color: #333;
+            }
+          }
+
+          .btn {
+            width: 100%;
+            padding: 15px;
+            background-color: $primary-color;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+              background-color: darken($primary-color, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
+}

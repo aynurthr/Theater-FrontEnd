@@ -1,0 +1,112 @@
+.navbar {
+  background-color: $background-color;
+  border-bottom: 1px solid #e0e0e0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      justify-content: space-between;
+    }
+
+    div:first-child {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__logo {
+    margin-right: 40px;
+
+    img {
+      height: 55px;
+      width: 55px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 40px;
+
+    a {
+      color: $primary-text-color;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $primary-color;
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      border-top: 1px solid #e0e0e0;
+
+      &--active {
+        display: flex;
+      }
+
+      a {
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+
+    .btn {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: $border-radius;
+
+      &--login {
+        color: $primary-text-color;
+        background-color: transparent;
+        border: 1px solid $secondary-text-color;
+
+        &:hover {
+          color: #fff;
+          background-color: $primary-color;
+          border: 1px solid $primary-color;
+        }
+      }
+
+      &--register {
+        color: #fff;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+
+        &:hover {
+          background-color: darken($primary-color, 20%);
+          border: 1px solid darken($primary-color, 20%);
+        }
+      }
+    }
+  }
+
+  &__burger {
+    display: none;
+    cursor: pointer;
+
+    img {
+      height: 30px;
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}

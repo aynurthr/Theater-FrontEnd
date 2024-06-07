@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poster Details</title>
+    <link rel="stylesheet" href="../../sass/main.css" />
+    <link rel="icon" type="image/x-icon" href="../../media/icons/theater.svg" />
+  </head>
+  <body id="Poster-details">
+    <section class="navbar">
+      <div class="container">
+        <div>
+          <a class="navbar__logo" href="../../pages/home/index.html">
+            <img src="../../media/icons/theater.svg" alt="Theater logo" />
+          </a>
+          <nav class="navbar__menu">
+            <a href="../home/index.html">Главная</a>
+            <a href="../posters/index.html">Афиша</a>
+            <a href="../all-news/index.html">Новости</a>
+            <a href="../about/index.html">О театре</a>
+          </nav>
+        </div>
+        <div class="navbar__actions">
+          <a href="../login/index.html" class="btn btn--login">Войти</a>
+          <a href="../register/index.html" class="btn btn--register"
+            >Регистрация</a
+          >
+        </div>
+        <div class="navbar__burger" id="burger-btn">
+          <img src="../../media/icons/burger.svg" alt="Burger icon" />
+        </div>
+      </div>
+    </section>
+    <section class="poster-details">
+      <img class="poster-image" src="" alt="Poster Image" />
+      <div class="poster-item__content">
+        <div class="poster-item__content__top">
+          <div class="container">
+            <div class="poster-item__content__top__left">
+              <h1></h1>
+              <div class="genre"></div>
+            </div>
+            <div class="poster-item__content__top__middle">
+              <div>
+                <p>Длительность</p>
+                <div class="duration"></div>
+              </div>
+              <div>
+                <p>Ограничение</p>
+                <div class="age"></div>
+              </div>
+            </div>
+            <div class="poster-item__content__top__right">
+              <a id="buy-ticket-btn" href="#">Купить билет</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="poster-item__content__bottom">
+          <section class="tabs">
+            <div class="container">
+              <div class="tabs__menu">
+                <a href="#" class="tab active" data-tab="about">О спектакле</a>
+                <a href="#" class="tab" data-tab="team">Коллектив</a>
+              </div>
+              <div class="tabs__content">
+                <div class="tab-content" id="about">
+                  <p></p>
+                </div>
+                <div class="tab-content" id="team" style="display: none">
+                  <div class="team-content"></div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <p class="poster-description"></p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__left">
+            <div class="footer-logo">
+              <img src="../../media/icons/theater.svg" alt="Theater logo" />
+              <h3>Казанский театр юного зрителя</h3>
+            </div>
+            <p>Присоединяйтесь к нашему сообществу</p>
+            <div class="footer-social-icons">
+              <a href="#"
+                ><img src="../../media/icons/youtube.svg" alt="Youtube Logo"
+              /></a>
+              <a href="#"
+                ><img src="../../media/icons/twitter.svg" alt="Twitter Logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../../media/icons/instagram.svg"
+                  alt="Instagram Logo"
+              /></a>
+            </div>
+          </div>
+          <div class="footer-top__middle">
+            <div class="footer-top__middle__header"><h3>Изучать</h3></div>
+            <div class="footer-links">
+              <a href="../home/index.html">Главная</a>
+              <a href="../posters/index.html">Афиша</a>
+              <a href="../all-news/index.html">Новости</a>
+              <a href="../about/index.html">О театре</a>
+            </div>
+          </div>
+          <div class="footer-top__right">
+            <div class="footer-top__right__header">
+              <h3>Подпишитесь на нашу рассылку</h3>
+            </div>
+            <p>
+              Получайте эксклюзивные акции и обновления прямо на ваш почтовый
+              ящик.
+            </p>
+            <form action="" class="email-form">
+              <input
+                type="email"
+                placeholder="Введите ваш email"
+                class="email-input"
+              />
+              <button type="submit">Подписаться</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom__divider"></div>
+          <p>Ⓒ Казанский ТЮЗ.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../../common/posters.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
