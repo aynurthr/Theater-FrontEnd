@@ -1,38 +1,48 @@
 export const news = {
   1: {
-    title: "24 мая - благотворительный показ спектакля «Иваново детство»",
-    date: "12.05.21",
+    title: "May 24 - Charity Performance of 'Ivan's Childhood'",
+    date: new Date(2021, 4, 12),
     description:
-      "24 мая пройдет благотворительный показ спектакля «Иваново детство». Все средства от реализации билетов будут семьям погибших в казанской гимназии №175",
+      "On May 24, a charity performance of 'Ivan's Childhood' will be held. All proceeds from ticket sales will go to the families of those who died in Kazan Gymnasium No. 175.",
     fullDescription:
-      "24 мая пройдет благотворительный показ спектакля «Иваново детство». Все средства от реализации билетов будут семьям погибших в казанской гимназии №175.",
+      "On May 24, a charity performance of 'Ivan's Childhood' will be held. All proceeds from ticket sales will go to the families of those who died in Kazan Gymnasium No. 175.",
     imageSrc: "../../media/images/news1.jpg",
   },
   2: {
-    title: "«Маленький принц» с сурдопереводом и тифлокомментированием",
-    date: "12.05.21",
+    title:
+      "'The Little Prince' with Sign Language Interpretation and Audiodescription",
+    date: new Date(2021, 9, 12),
     description:
-      "29 мая в 18:00 пройдет очередной показ в рамках проекта «Театр без границ» Казанского ТЮЗа и фонда «День добрых дел». Тифлокомментированием и сурдопереводом будет оснащен «Маленький принц» - трогательная и мудрая история о дружбе и взрослении.",
+      "On May 29 at 18:00, the next performance will take place as part of the 'Theater Without Borders' project by Kazan's TYA and the 'Day of Good Deeds' fund. 'The Little Prince' - a touching and wise story about friendship and growing up - will be equipped with sign language interpretation and audiodescription.",
     fullDescription:
-      "29 мая в 18:00 пройдет очередной показ в рамках проекта «Театр без границ» Казанского ТЮЗа и фонда «День добрых дел». Тифлокомментированием и сурдопереводом будет оснащен «Маленький принц» - трогательная и мудрая история о дружбе и взрослении.",
+      "On May 29 at 18:00, the next performance will take place as part of the 'Theater Without Borders' project by Kazan's TYA and the 'Day of Good Deeds' fund. 'The Little Prince' - a touching and wise story about friendship and growing up - will be equipped with sign language interpretation and audiodescription.",
     imageSrc: "../../media/images/news2.jpg",
   },
   3: {
-    title: "Вячеслав Казанцев - народный артист РТ!",
-    date: "27.04.21",
+    title: "Vyacheslav Kazantsev - People's Artist of RT!",
+    date: new Date(2020, 3, 27),
     description:
-      "Президент РТ Рустам Минниханов присвоил ему звание в Казанском Кремле. Сегодня Президент Республики Татарстан Рустам Минниханов вручил государственные награды Российской Федерации и Республики Татарстан.",
+      "President of the Republic of Tatarstan Rustam Minnikhanov awarded him the title in the Kazan Kremlin. Today, the President of the Republic of Tatarstan Rustam Minnikhanov presented state awards of the Russian Federation and the Republic of Tatarstan.",
     fullDescription:
-      "Президент РТ Рустам Минниханов присвоил ему звание в Казанском Кремле. Сегодня Президент Республики Татарстан Рустам Минниханов вручил государственные награды Российской Федерации и Республики Татарстан.",
+      "President of the Republic of Tatarstan Rustam Minnikhanov awarded him the title in the Kazan Kremlin. Today, the President of the Republic of Tatarstan Rustam Minnikhanov presented state awards of the Russian Federation and the Republic of Tatarstan.",
     imageSrc: "../../media/images/news2.jpg",
   },
   4: {
-    title: "Радион Букаев представит свой первый спектакль в Казанском ТЮЗе",
-    date: "12.05.21",
+    title: "Radion Bukaev to Present His First Play at Kazan's TYA",
+    date: new Date(2021, 4, 12),
     description:
-      "Им станет постановка о 1970-1980 годах театра, приуроченная к 90-летнему юбилею ТЮЗа. 26 марта в 18:30 в Казанском ТЮЗе пройдет премьера спектакля-пластики «Первый тайм». Его постановщиком выступил Радион Букаев, который с 2020 года является главным режиссером театра.",
+      "The play will be a production about the theater in the 1970s-1980s, dedicated to the 90th anniversary of TYA. On March 26 at 18:30, the premiere of the plastic performance 'First Half' will take place at Kazan's TYA. The director is Radion Bukaev, who has been the main director of the theater since 2020.",
     fullDescription:
-      "Им станет постановка о 1970-1980 годах театра, приуроченная к 90-летнему юбилею ТЮЗа. 26 марта в 18:30 в Казанском ТЮЗе пройдет премьера спектакля-пластики «Первый тайм». Его постановщиком выступил Радион Букаев, который с 2020 года является главным режиссером театра.",
+      "The play will be a production about the theater in the 1970s-1980s, dedicated to the 90th anniversary of TYA. On March 26 at 18:30, the premiere of the plastic performance 'First Half' will take place at Kazan's TYA. The director is Radion Bukaev, who has been the main director of the theater since 2020.",
+    imageSrc: "../../media/images/news2.jpg",
+  },
+  5: {
+    title: "Radion Bukaev to Present His First Play at Kazan's TYA",
+    date: new Date(2023, 4, 12),
+    description:
+      "The play will be a production about the theater in the 1970s-1980s, dedicated to the 90th anniversary of TYA. On March 26 at 18:30, the premiere of the plastic performance 'First Half' will take place at Kazan's TYA. The director is Radion Bukaev, who has been the main director of the theater since 2020.",
+    fullDescription:
+      "The play will be a production about the theater in the 1970s-1980s, dedicated to the 90th anniversary of TYA. On March 26 at 18:30, the premiere of the plastic performance 'First Half' will take place at Kazan's TYA. The director is Radion Bukaev, who has been the main director of the theater since 2020.",
     imageSrc: "../../media/images/news2.jpg",
   },
 };

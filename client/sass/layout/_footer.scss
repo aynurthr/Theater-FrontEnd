@@ -53,6 +53,7 @@
 
     &__middle {
       &__header {
+        border-bottom: 1px solid white;
         height: 40px;
         display: flex;
         align-items: center;
@@ -77,7 +78,9 @@
     }
 
     &__right {
+      width: 350px;
       &__header {
+        border-bottom: 1px solid white;
         height: 40px;
         display: flex;
         align-items: center;

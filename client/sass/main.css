@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -106,6 +107,7 @@ a:hover {
   height: 24px;
 }
 .footer .footer-top__middle__header {
+  border-bottom: 1px solid white;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -134,7 +136,11 @@ a:hover {
 .footer .footer-top__middle .footer-links a:hover {
   color: #333;
 }
+.footer .footer-top__right {
+  width: 350px;
+}
 .footer .footer-top__right__header {
+  border-bottom: 1px solid white;
   height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,7 +372,7 @@ a:hover {
   display: none;
 }
 #Home .hero__top .hero__heading {
-  width: 585px;
+  width: 800px;
   height: 172px;
   margin-bottom: 50px;
 }
@@ -467,6 +473,9 @@ a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 20px;
      -moz-column-gap: 20px;
           column-gap: 20px;
@@ -572,6 +581,23 @@ a:hover {
   margin: 10px 0 0;
   font-size: 12px;
   white-space: normal;
+}
+#Home .premieres .btn--more {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #282828;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+#Home .premieres .btn--more:hover {
+  color: #fa434b;
+  cursor: pointer;
 }
 #Home .info {
   background-color: #fa434b;
@@ -1133,24 +1159,24 @@ a:hover {
   padding: 40px 0;
 }
 
-#Posters .shows .container {
+#Premieres .shows .container {
   padding: 40px 0;
 }
-#Posters .shows .search-bar {
+#Premieres .shows .search-bar {
   margin-bottom: 20px;
 }
-#Posters .shows .search-bar input {
+#Premieres .shows .search-bar input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
-#Posters .shows h1 {
+#Premieres .shows h1 {
   font-size: 36px;
   margin-bottom: 20px;
 }
-#Posters .shows .shows-wrapper {
+#Premieres .shows .shows-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: calc((100% - 1005px) / 2);
@@ -1158,7 +1184,7 @@ a:hover {
           column-gap: calc((100% - 1005px) / 2);
   row-gap: 40px;
 }
-#Posters .shows-item {
+#Premieres .shows-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -1184,12 +1210,12 @@ a:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease, -webkit-transform 0.3s ease, -webkit-box-shadow 0.3s ease;
 }
-#Posters .shows-item:hover {
+#Premieres .shows-item:hover {
   cursor: pointer;
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
 }
-#Posters .shows-item img {
+#Premieres .shows-item img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1199,7 +1225,7 @@ a:hover {
   left: 0;
   z-index: -1;
 }
-#Posters .shows-item__shadow {
+#Premieres .shows-item__shadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -1209,31 +1235,31 @@ a:hover {
   background-size: cover;
   z-index: 1;
 }
-#Posters .shows-item__top {
+#Premieres .shows-item__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
   z-index: 2;
 }
-#Posters .shows-item__top date,
-#Posters .shows-item__top age {
+#Premieres .shows-item__top date,
+#Premieres .shows-item__top age {
   font-size: 14px;
   padding: 5px 10px;
   border-radius: 15px;
 }
-#Posters .shows-item__top date {
+#Premieres .shows-item__top date {
   background-color: #fa434b;
   color: #fff;
 }
-#Posters .shows-item__top age {
+#Premieres .shows-item__top age {
   background-color: #fff;
   color: #282828;
 }
-#Posters .shows-item__bottom {
+#Premieres .shows-item__bottom {
   z-index: 2;
 }
-#Posters .shows-item__bottom .description {
+#Premieres .shows-item__bottom .description {
   display: -webkit-box;
   -webkit-line-clamp: 2; /* Limit to 2 lines */
   -webkit-box-orient: vertical;
@@ -1241,19 +1267,19 @@ a:hover {
   text-overflow: ellipsis;
   white-space: normal;
 }
-#Posters .shows-item__bottom h5 {
+#Premieres .shows-item__bottom h5 {
   color: #ffffff;
   margin: 0;
   font-size: 20px;
   white-space: normal;
 }
-#Posters .shows-item__bottom p {
+#Premieres .shows-item__bottom p {
   color: #c7c7c7;
   margin: 10px 0 0;
   font-size: 12px;
   white-space: normal;
 }
-#Posters .shows .pagination {
+#Premieres .shows .pagination {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1265,7 +1291,7 @@ a:hover {
           align-items: center;
   margin-top: 20px;
 }
-#Posters .shows .pagination button {
+#Premieres .shows .pagination button {
   padding: 10px 20px;
   border: none;
   background-color: #fa434b;
@@ -1274,14 +1300,14 @@ a:hover {
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-#Posters .shows .pagination button:hover {
+#Premieres .shows .pagination button:hover {
   background-color: #f9111b;
 }
-#Posters .shows .pagination button:disabled {
+#Premieres .shows .pagination button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }
-#Posters .shows .pagination #page-num {
+#Premieres .shows .pagination #page-num {
   margin: 0 20px;
   font-size: 18px;
 }
@@ -1313,7 +1339,7 @@ a:hover {
   font-size: 36px;
   margin-bottom: 10px;
 }
-#Poster-details .poster-details .poster-item__content__top__left genre {
+#Poster-details .poster-details .poster-item__content__top__left .genre {
   font-size: 18px;
 }
 #Poster-details .poster-details .poster-item__content__top__middle {
@@ -1398,6 +1424,47 @@ a:hover {
   font-size: 16px;
   line-height: 1.6;
 }
+#Poster-details .poster-details .poster-item__content .team-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#Poster-details .poster-details .poster-item__content .team-content .cast-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+}
+#Poster-details .poster-details .poster-item__content .team-content .cast-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+#Poster-details .poster-details .poster-item__content .team-content .cast-member .cast-info h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+#Poster-details .poster-details .poster-item__content .team-content .cast-member .cast-info p {
+  font-size: 14px;
+  margin: 0;
+  color: #818181;
+}
+#Poster-details .poster-details .poster-item__content .team-content .cast-member .cast-info .role {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
 
 #Buy-ticket .poster-details img {
   width: 100%;
@@ -1475,9 +1542,9 @@ a:hover {
   margin-bottom: 20px;
 }
 #Buy-ticket .booking__dates {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 #Buy-ticket .booking__dates .booking__date {
@@ -1582,4 +1649,199 @@ a:hover {
 }
 #Buy-ticket .seat.selected {
   background-color: #fa434b;
+}
+
+#Rules-of-Conduct .rules {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+#Rules-of-Conduct .rules .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+#Rules-of-Conduct .rules h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#Rules-of-Conduct .rules .rules__content h2 {
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #555;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+#Rules-of-Conduct .rules .rules__content ul {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 20px;
+}
+#Rules-of-Conduct .rules .rules__content ul li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+  color: #666;
+  padding-left: 5px;
+  position: relative;
+}
+#Rules-of-Conduct .rules .rules__content ul li:before {
+  content: "•";
+  position: absolute;
+  left: -20px;
+  color: #fa434b;
+  font-size: 20px;
+}
+
+#Halls .hall-panorama {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+}
+#Halls .hall-panorama .container {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+#Halls .hall-panorama .container h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#Halls .hall-panorama .container p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+#Halls .hall-panorama .container .hall {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 40px;
+}
+#Halls .hall-panorama .container .hall-images {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#Halls .hall-panorama .container .hall-images .image-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#Halls .hall-panorama .container .hall-images .image-container img {
+  width: 700px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#Halls .hall-panorama .container .hall-images .image-container button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 35px;
+  width: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+#Halls .hall-panorama .container .hall-images .image-container button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+#Halls .hall-panorama .container .hall-images .image-container button.prev {
+  left: 10px;
+}
+#Halls .hall-panorama .container .hall-images .image-container button.next {
+  right: 10px;
+}
+#Halls .hall-panorama .container .hall-info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px;
+}
+#Halls .hall-panorama .container .hall-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+#Halls .hall-panorama .container .hall-info p {
+  text-align: left;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+#Halls .hall-panorama .container .hall-info ul {
+  list-style: none;
+  padding: 0;
+}
+#Halls .hall-panorama .container .hall-info ul li {
+  margin-left: 40px;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 10px;
+}
+#Halls .hall-panorama .container .hall-info ul li:before {
+  content: "•";
+  color: #fa434b;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 10px;
+}
+#Halls .hall-panorama .container .hall.hall-reverse .hall-images {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+#Halls .hall-panorama .container .hall.hall-reverse .hall-info {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }

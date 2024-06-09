@@ -1,5 +1,6 @@
 import { posters } from "../../common/posters.js";
 import { halls } from "../../common/halls.js";
+import { formatLongDate } from "../../common/format-date.js";
 
 document.addEventListener("DOMContentLoaded", function () {
   const urlParams = new URLSearchParams(window.location.search);
@@ -9,6 +10,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const poster = posters[id];
     document.getElementById("poster-title").innerText = poster.title;
     document.querySelector(".poster-image").src = poster.imageSrc;
+
+    //to change the page title
+    document.title = `${poster.title} │ Buy Ticket`;
+
+    //populate show dates, filtering out past dates
+    const now = new Date();
+    const bookingDatesContainer = document.querySelector(".booking__dates");
+    let firstFutureDate = true;
+
+    poster.showDates.forEach((showDate) => {
+      const date = new Date(showDate);
+      if (date > now) {
+        const dateButton = document.createElement("button");
+        dateButton.classList.add("booking__date");
+        if (firstFutureDate) {
+          dateButton.classList.add("active");
+          firstFutureDate = false;
+        }
+        dateButton.innerText = formatLongDate(date);
+        dateButton.dataset.date = date.toISOString();
+        bookingDatesContainer.appendChild(dateButton);
+      }
+    });
 
     const hall = poster.hall;
     let seatingChart;
@@ -25,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let totalPrice = 0;
     updateTotalPrice(totalPrice);
 
-    // for seat selection
+    //seat selection and price change
     document.addEventListener("click", function (event) {
       if (event.target.classList.contains("seat")) {
         event.target.classList.toggle("selected");
@@ -38,6 +62,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
+    //handle date selection
+    document
+      .querySelector(".booking__dates")
+      .addEventListener("click", function (event) {
+        if (event.target.classList.contains("booking__date")) {
+          document
+            .querySelectorAll(".booking__date")
+            .forEach((btn) => btn.classList.remove("active"));
+          event.target.classList.add("active");
+        }
+      });
+
     document
       .querySelector(".btn--cancel")
       .addEventListener("click", function () {
@@ -47,6 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".container").innerHTML = "<p>Poster not found.</p>";
   }
 
+  //create seating
   function generateSeatingChart(rows, seatsPerRow) {
     let seatingChart = '<div class="seating-chart">';
     for (let i = 1; i <= rows; i++) {
