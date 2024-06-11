@@ -5,6 +5,14 @@
       height: 540px;
       object-fit: cover;
       object-position: center;
+
+      @media (max-width: $tablet-width) {
+        height: 400px;
+      }
+
+      @media (max-width: $mobile-width) {
+        height: 300px;
+      }
     }
 
     .poster-item__content {
@@ -15,15 +23,40 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          @media (max-width: $tablet-width) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+
+          @media (max-width: $mobile-width) {
+            align-items: flex-start;
+          }
         }
 
         &__left {
           h1 {
             font-size: 36px;
             margin-bottom: 10px;
+
+            @media (max-width: $tablet-width) {
+              font-size: 28px;
+            }
+
+            @media (max-width: $mobile-width) {
+              font-size: 24px;
+            }
           }
           .genre {
             font-size: 18px;
+
+            @media (max-width: $tablet-width) {
+              font-size: 16px;
+            }
+
+            @media (max-width: $mobile-width) {
+              font-size: 14px;
+            }
           }
         }
 
@@ -31,6 +64,18 @@
           display: flex;
           align-items: center;
           column-gap: 150px;
+
+          @media (max-width: $tablet-width) {
+            column-gap: 50px;
+            margin-top: 20px;
+          }
+
+          @media (max-width: $mobile-width) {
+            flex-direction: column;
+            align-items: flex-start;
+            column-gap: 0;
+            row-gap: 10px;
+          }
 
           div {
             p {
@@ -43,6 +88,14 @@
             .age {
               font-size: 24px;
               font-weight: bold;
+
+              @media (max-width: $tablet-width) {
+                font-size: 20px;
+              }
+
+              @media (max-width: $mobile-width) {
+                font-size: 18px;
+              }
             }
           }
         }
@@ -61,12 +114,30 @@
             &:hover {
               background-color: darken($primary-color, 20%);
             }
+
+            @media (max-width: $tablet-width) {
+              margin-top: 20px;
+            }
+
+            @media (max-width: $mobile-width) {
+              font-size: 16px;
+              padding: 8px 20px;
+              margin-top: 10px;
+            }
           }
         }
       }
 
       &__bottom {
         padding-top: 40px;
+
+        @media (max-width: $tablet-width) {
+          padding-top: 30px;
+        }
+
+        @media (max-width: $mobile-width) {
+          padding-top: 20px;
+        }
 
         .tabs {
           .container {
@@ -98,6 +169,16 @@
               &:hover {
                 color: $primary-color;
               }
+
+              @media (max-width: $tablet-width) {
+                padding: 8px 15px;
+                font-size: 16px;
+              }
+
+              @media (max-width: $mobile-width) {
+                padding: 6px 10px;
+                font-size: 14px;
+              }
             }
           }
 
@@ -117,12 +198,31 @@
         padding: 20px 0;
         font-size: 16px;
         line-height: 1.6;
+
+        @media (max-width: $tablet-width) {
+          padding: 15px 0;
+          font-size: 14px;
+        }
+
+        @media (max-width: $mobile-width) {
+          padding: 10px 0;
+          font-size: 12px;
+        }
       }
 
       .team-content {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+
+        @media (max-width: $tablet-width) {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+
+        @media (max-width: $mobile-width) {
+          gap: 10px;
+        }
 
         .cast-member {
           display: flex;
@@ -139,24 +239,58 @@
             border-radius: 50%;
             object-fit: cover;
             object-position: center;
+
+            @media (max-width: $tablet-width) {
+              width: 120px;
+              height: 120px;
+            }
+
+            @media (max-width: $mobile-width) {
+              width: 100px;
+              height: 100px;
+            }
           }
 
           .cast-info {
             h3 {
               font-size: 22px;
               margin-bottom: 5px;
+
+              @media (max-width: $tablet-width) {
+                font-size: 20px;
+              }
+
+              @media (max-width: $mobile-width) {
+                font-size: 18px;
+              }
             }
 
             p {
               font-size: 14px;
               margin: 0;
               color: $secondary-text-color;
+
+              @media (max-width: $tablet-width) {
+                font-size: 12px;
+              }
+
+              @media (max-width: $mobile-width) {
+                font-size: 10px;
+              }
             }
 
             .role {
               font-size: 22px;
               margin-bottom: 10px;
               font-weight: bold;
+
+              @media (max-width: $tablet-width) {
+                font-size: 20px;
+              }
+
+              @media (max-width: $mobile-width) {
+                font-size: 18px;
+              }
             }
           }
         }

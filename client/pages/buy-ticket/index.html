@@ -10,17 +10,21 @@
   <body id="Buy-ticket">
     <section class="navbar">
       <div class="container">
-        <div>
+        <div class="navbar__menu">
           <a class="navbar__logo" href="../../pages/home/index.html">
             <img src="../../media/icons/theater.svg" alt="Theater logo" />
           </a>
-          <nav class="navbar__menu">
-            <a href="../home/index.html">Home</a>
-            <a href="../posters/index.html">Premieres</a>
-            <a href="../all-news/index.html">News</a>
-            <a href="../about/index.html">About the Theater</a>
-          </nav>
+          <div>
+            <a class="navbar__text" href="../home/index.html">Home</a>
+            <a class="navbar__text" href="../posters/index.html">Premieres</a>
+            <a class="navbar__text" href="../all-news/index.html">News</a>
+            <a class="navbar__text" href="../about/index.html"
+              >About the Theater</a
+            >
+            <a class="navbar__text" href="../contact/index.html">Contact Us</a>
+          </div>
         </div>
+
         <div class="navbar__actions">
           <a href="../login/index.html" class="btn btn--login">Log In</a>
           <a href="../register/index.html" class="btn btn--register"
@@ -31,18 +35,25 @@
           <img src="../../media/icons/burger.svg" alt="Burger icon" />
         </div>
       </div>
+      <div class="sidebar-menu">
+        <a href="../home/index.html">Home</a>
+        <a href="../posters/index.html">Premieres</a>
+        <a href="../all-news/index.html">News</a>
+        <a href="../about/index.html">About the Theater</a>
+        <a href="../contact/index.html">Contact Us</a>
+        <a href="../login/index.html" class="btn btn--login">Log In</a>
+        <a href="../register/index.html" class="btn btn--register">Register</a>
+      </div>
     </section>
     <section class="poster-details">
       <img class="poster-image" src="" alt="Poster Image" />
       <div class="poster-item__content">
-        <div class="poster-item__content__top">
-          <div class="container">
-            <div class="poster-item__content__top__left">
-              <h1 id="poster-title">Buy Ticket</h1>
-            </div>
-            <div class="poster-item__content__top__price">
-              <h1 id="total-price"></h1>
-            </div>
+        <div class="container">
+          <div class="poster-item__content__left">
+            <h1 id="poster-title">Buy Ticket</h1>
+          </div>
+          <div class="poster-item__content__price">
+            <h1 id="total-price"></h1>
           </div>
         </div>
       </div>
@@ -80,6 +91,22 @@
               <img src="../../media/icons/theater.svg" alt="Theater logo" />
               <h3>Kazan State Theater of The Young Spectators</h3>
             </div>
+            <table>
+              <tbody>
+                <tr>
+                  <th>Address:</th>
+                  <td>123 Theater Lane, Kazan, Russia</td>
+                </tr>
+                <tr>
+                  <th>Email:</th>
+                  <td>contact@kazan-theater.ru</td>
+                </tr>
+                <tr>
+                  <th>Phone:</th>
+                  <td>+7 (123) 456-7890</td>
+                </tr>
+              </tbody>
+            </table>
             <p>Join our community</p>
             <div class="footer-social-icons">
               <a href="#"
@@ -127,5 +154,6 @@
     <script type="module" src="../../common/halls.js"></script>
     <script type="module" src="../../common/posters.js"></script>
     <script type="module" src="script.js"></script>
+    <script src="../../common/sidebar.js"></script>
   </body>
 </html>

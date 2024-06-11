@@ -5,51 +5,88 @@
       height: 540px;
       object-fit: cover;
       object-position: center;
+
+      @media (max-width: $tablet-width) {
+        height: 400px;
+      }
+
+      @media (max-width: $mobile-width) {
+        height: 300px;
+      }
     }
 
     .poster-item__content {
-      &__top {
-        background-color: $secondary-color;
-        > .container {
-          padding: 0;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+      background-color: $secondary-color;
+      > .container {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $tablet-width) {
+          // align-items: flex-start;
         }
 
-        &__left {
-          h1 {
-            padding: 20px;
+        @media (max-width: $mobile-width) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
 
-            font-size: 36px;
+      &__left {
+        h1 {
+          padding: 20px;
+          font-size: 36px;
+
+          @media (max-width: $tablet-width) {
+            font-size: 28px;
+          }
+
+          @media (max-width: $mobile-width) {
+            font-size: 24px;
           }
         }
+      }
 
-        &__price {
+      &__price {
+        width: 302px;
+        height: 100%;
+        text-align: center;
+        h1 {
+          line-height: 80px;
           width: 302px;
           height: 82px;
-          text-align: center;
-          h1 {
-            line-height: 80px;
+          display: inline-block;
+          background-color: $primary-color;
+          color: #fff;
+          text-decoration: none;
+          font-size: 36px;
+          transition: background-color 0.3s;
 
-            width: 302px;
-            height: 82px;
-            display: inline-block;
-            background-color: $primary-color;
-            color: #fff;
-            text-decoration: none;
-            font-size: 36px;
-            transition: background-color 0.3s;
+          &:hover {
+            cursor: pointer;
+            background-color: darken($primary-color, 20%);
+          }
 
-            &:hover {
-              cursor: pointer;
-              background-color: darken($primary-color, 20%);
-            }
+          @media (max-width: $tablet-width) {
+            font-size: 28px;
+            line-height: 70px;
+            width: 250px;
+            height: 70px;
+          }
+
+          @media (max-width: $mobile-width) {
+            font-size: 24px;
+            line-height: 60px;
+            width: 60%;
+            height: 60px;
+            border-radius: $border-radius;
           }
         }
       }
     }
   }
+
   .booking {
     display: flex;
     justify-content: space-between;
@@ -59,23 +96,59 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
+
+      @media (max-width: $tablet-width) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      @media (max-width: $mobile-width) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
 
     &__left,
     &__right {
       width: 48%;
+
+      @media (max-width: $tablet-width) {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: $mobile-width) {
+        width: 100%;
+        margin-bottom: 10px;
+      }
     }
 
     h2 {
       font-size: 24px;
       margin-bottom: 20px;
+
+      @media (max-width: $tablet-width) {
+        font-size: 20px;
+      }
+
+      @media (max-width: $mobile-width) {
+        font-size: 18px;
+      }
     }
 
     &__dates {
-      width: 600px;
+      width: 400px;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 10px;
+
+      @media (max-width: $tablet-width) {
+        width: 100%;
+      }
+
+      @media (max-width: $mobile-width) {
+        gap: 5px;
+      }
 
       .booking__date {
         background-color: #fff;
@@ -93,12 +166,32 @@
         &:hover {
           border-color: $primary-color;
         }
+
+        @media (max-width: $tablet-width) {
+          font-size: 16px;
+          padding: 8px 15px;
+        }
+
+        @media (max-width: $mobile-width) {
+          font-size: 14px;
+          padding: 6px 10px;
+        }
       }
     }
 
     &__info {
       font-size: 14px;
       padding: 40px 0;
+
+      @media (max-width: $tablet-width) {
+        font-size: 12px;
+        padding: 30px 0;
+      }
+
+      @media (max-width: $mobile-width) {
+        font-size: 10px;
+        padding: 20px 0;
+      }
     }
 
     &__actions {
@@ -111,6 +204,17 @@
         border-radius: $border-radius;
         cursor: pointer;
         transition: background-color 0.3s ease;
+
+        @media (max-width: $tablet-width) {
+          font-size: 16px;
+          padding: 8px 15px;
+          margin-bottom: 15px;
+        }
+
+        @media (max-width: $mobile-width) {
+          font-size: 14px;
+          padding: 6px 10px;
+        }
 
         &--pay {
           background-color: $primary-color;
@@ -146,6 +250,14 @@
       &__seating {
         width: 100%;
         height: auto;
+
+        @media (max-width: $tablet-width) {
+          width: 100%;
+        }
+
+        @media (max-width: $mobile-width) {
+          width: 100%;
+        }
       }
     }
   }
@@ -161,6 +273,20 @@
     display: flex;
     align-items: center;
     column-gap: 2px;
+    text-align: right;
+    > div {
+      width: 25px;
+      height: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: $tablet-width) {
+      column-gap: 1px;
+    }
+
+    @media (max-width: $mobile-width) {
+      column-gap: 1px;
+    }
   }
 
   .seat {
@@ -170,6 +296,18 @@
     margin: 3px;
     border-radius: 100%;
     cursor: pointer;
+
+    @media (max-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      margin: 2px;
+    }
+
+    @media (max-width: $mobile-width) {
+      width: 16px;
+      height: 16px;
+      margin: 1px;
+    }
   }
 
   .seat.selected {

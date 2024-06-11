@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hall Panorama</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../../sass/main.css" />
     <link rel="icon" type="image/x-icon" href="../../media/icons/theater.svg" />
   </head>
-  <body id="Halls">
+  <body id="Contact">
     <section class="navbar">
       <div class="container">
         <div class="navbar__menu">
@@ -45,73 +45,56 @@
         <a href="../register/index.html" class="btn btn--register">Register</a>
       </div>
     </section>
-    <section class="hall-panorama">
+    <section class="contact-section">
       <div class="container">
-        <div class="hall-panorama__title">
-          <a href="../home/index.html"
-            ><img
+        <div class="contact-section__title">
+          <a href="../home/index.html">
+            <img
               src="../../media/icons/arrow.svg"
               alt=""
               style="transform: scaleX(-1)"
-          /></a>
-          <h1>Hall Panorama</h1>
-        </div>
-        <p>
-          Our theater boasts two main halls, each offering a unique experience
-          for our visitors. Explore the details of each hall below.
-        </p>
-
-        <div class="hall">
-          <div class="hall-images">
-            <div class="image-container">
-              <button class="prev hall1-prev">&laquo;</button>
-              <img
-                src="../../media/images/first-hall/hall1-1.webp"
-                alt="Hall 1 Image 1"
-                id="hall1-image"
-              />
-              <button class="next hall1-next">&raquo;</button>
-            </div>
-          </div>
-          <div class="hall-info">
-            <h2>Hall 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              at libero nec ligula varius scelerisque. Vestibulum tincidunt sem
-              ut ex fermentum, a feugiat leo aliquam.
-            </p>
-            <ul>
-              <li>Capacity: 500 seats</li>
-              <li>State-of-the-art sound system</li>
-              <li>Comfortable seating</li>
-            </ul>
-          </div>
+            />
+          </a>
+          <h1>Contact Us</h1>
         </div>
 
-        <div class="hall hall-reverse">
-          <div class="hall-info">
-            <h2>Hall 2</h2>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2>Get in Touch</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              at libero nec ligula varius scelerisque. Vestibulum tincidunt sem
-              ut ex fermentum, a feugiat leo aliquam.
+              We'd love to hear from you! Whether you have a question about our
+              shows, pricing, or anything else, our team is ready to answer all
+              your questions.
             </p>
             <ul>
-              <li>Capacity: 300 seats</li>
-              <li>Advanced lighting system</li>
-              <li>Spacious stage</li>
+              <li><strong>Address:</strong> 123 Theater Lane, Kazan, Russia</li>
+              <li><strong>Email:</strong> contact@kazan-theater.ru</li>
+              <li><strong>Phone:</strong> +7 (123) 456-7890</li>
             </ul>
           </div>
-          <div class="hall-images">
-            <div class="image-container">
-              <button class="prev hall2-prev">&laquo;</button>
-              <img
-                src="../../media/images/second-hall/hall2-1.jpg"
-                alt="Hall 2 Image 1"
-                id="hall2-image"
-              />
-              <button class="next hall2-next">&raquo;</button>
-            </div>
+          <div class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="">
+              <div class="input-group">
+                <input type="text" placeholder="Your Name*" required />
+              </div>
+              <div class="input-group">
+                <input type="email" placeholder="Your Email*" required />
+              </div>
+              <div class="input-group">
+                <input type="text" placeholder="The Topic*" required />
+              </div>
+              <div class="input-group">
+                <textarea
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--submit">
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -184,7 +167,6 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
-    <script src="../../common/sidebar.js"></script>
+    <script type="module" src="../../common/sidebar.js"></script>
   </body>
 </html>

@@ -6,14 +6,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media (max-width: 768px) {
-      justify-content: space-between;
-    }
-
-    div:first-child {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &__logo {
@@ -27,9 +19,14 @@
 
   &__menu {
     display: flex;
-    gap: 40px;
-
-    a {
+    align-items: center;
+    gap: 10px;
+    > div {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+    .navbar__text {
       color: $primary-text-color;
       text-decoration: none;
       font-weight: 600;
@@ -38,25 +35,8 @@
       &:hover {
         color: $primary-color;
       }
-    }
-
-    @media (max-width: 768px) {
-      display: none;
-      flex-direction: column;
-      width: 100%;
-      background-color: #fff;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      border-top: 1px solid #e0e0e0;
-
-      &--active {
-        display: flex;
-      }
-
-      a {
-        padding: 10px;
-        border-bottom: 1px solid #e0e0e0;
+      @media (max-width: $tablet-width) {
+        display: none;
       }
     }
   }
@@ -95,18 +75,88 @@
         }
       }
     }
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &__burger {
-    display: none;
+    display: none !important;
     cursor: pointer;
 
     img {
       height: 30px;
     }
 
-    @media (max-width: 768px) {
-      display: block;
+    @media (max-width: $tablet-width) {
+      display: block !important;
+    }
+  }
+}
+
+// Sidebar Menu
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: fixed;
+  top: 0;
+  right: -350px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+
+  &--active {
+    right: 0;
+  }
+
+  a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    color: $primary-text-color;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .btn {
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: $border-radius;
+
+    &--login {
+      color: $primary-text-color;
+      background-color: transparent;
+      border: 1px solid $secondary-text-color;
+
+      &:hover {
+        color: #fff;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+      }
+    }
+
+    &--register {
+      color: #fff;
+      background-color: $primary-color;
+      border: 1px solid $primary-color;
+
+      &:hover {
+        background-color: darken($primary-color, 20%);
+        border: 1px solid darken($primary-color, 20%);
+      }
     }
   }
 }

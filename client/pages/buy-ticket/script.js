@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function generateSeatingChart(rows, seatsPerRow) {
     let seatingChart = '<div class="seating-chart">';
     for (let i = 1; i <= rows; i++) {
-      seatingChart += `<div class="seating-row"> ${i} `;
+      seatingChart += `<div class="seating-row"> <div>${i}</div> `;
       for (let j = 1; j <= seatsPerRow[i - 1]; j++) {
         seatingChart += `<span class="seat" data-row="${i}" data-seat="${j}"></span>`;
       }
