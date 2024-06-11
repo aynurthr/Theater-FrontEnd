@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     (member) => member.title !== "Founder and Artistic Director"
   );
 
-  // Add other team members first
+  // to add other team members first
   otherMembers.forEach((member) => {
     const teamMemberDiv = document.createElement("div");
     teamMemberDiv.classList.add("team-member");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     teamWrapper.appendChild(teamMemberDiv);
   });
 
-  // Add the founder member in the middle
+  // to add the founder member in the middle
   const founderDiv = document.createElement("div");
   founderDiv.classList.add("team-member", "founder");
   founderDiv.innerHTML = `
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <p>${founderMember.bio}</p></div>
   `;
 
-  // Insert founder in the middle
+  // to insert founder in the middle
   const middleIndex = Math.floor(otherMembers.length / 2);
   teamWrapper.insertBefore(founderDiv, teamWrapper.children[middleIndex]);
 });

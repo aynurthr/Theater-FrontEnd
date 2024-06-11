@@ -4,9 +4,11 @@
 @import "utils/variables";
 
 @import "components/buttons";
+@import "layout/loading-screen";
 @import "layout/container";
 @import "layout/footer";
 @import "layout/navbar";
+
 @import "pages/home";
 @import "pages/about";
 @import "pages/login";
