@@ -2696,6 +2696,21 @@ a:hover {
   margin-bottom: 10px;
   min-height: 100px;
 }
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form textarea::-webkit-scrollbar {
+  width: 12px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form textarea::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+  border: 3px solid #f1f1f1;
+  cursor: auto;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 #Poster-details .poster-details .poster-item__content .comments-content .comment-form button {
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -4156,6 +4171,26 @@ a:hover {
   font-size: 16px;
   color: #333;
   resize: vertical;
+  max-height: 300px;
+}
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group input::-webkit-scrollbar,
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group textarea::-webkit-scrollbar {
+  width: 12px;
+}
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group input::-webkit-scrollbar-track,
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group textarea::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group input::-webkit-scrollbar-thumb,
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group textarea::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+  border: 3px solid #f1f1f1;
+  cursor: auto;
+}
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group input::-webkit-scrollbar-thumb:hover,
+#Contact .contact-section .container .contact-wrapper .contact-form form .input-group textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 @media (max-width: 1067px) {
   #Contact .contact-section .container .contact-wrapper .contact-form form .input-group input,

@@ -179,7 +179,25 @@
                 font-size: 16px;
                 color: #333;
                 resize: vertical;
+                max-height: 300px;
+                &::-webkit-scrollbar {
+                  width: 12px;
+                }
 
+                &::-webkit-scrollbar-track {
+                  background: #f1f1f1;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                  background-color: #888;
+                  border-radius: 6px;
+                  border: 3px solid #f1f1f1;
+                  cursor: auto;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                  background: #555;
+                }
                 @media (max-width: $tablet-width) {
                   padding: 12px;
                   font-size: 14px;
