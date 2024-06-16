@@ -2298,6 +2298,64 @@ a:hover {
     height: 300px;
   }
 }
+#Poster-details .poster-details .poster-item__actions .container {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 15px;
+     -moz-column-gap: 15px;
+          column-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1067px) {
+  #Poster-details .poster-details .poster-item__actions .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    row-gap: 10px;
+  }
+}
+#Poster-details .poster-details .poster-item__actions p {
+  margin-right: 10px;
+}
+#Poster-details .poster-details .poster-item__actions .action-button {
+  cursor: pointer;
+}
+#Poster-details .poster-details .poster-item__actions .action-button i {
+  font-size: 30px;
+}
+#Poster-details .poster-details .poster-item__actions .action-button:hover {
+  cursor: pointer;
+}
+#Poster-details .poster-details .poster-item__actions .star-rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+#Poster-details .poster-details .poster-item__actions .star-rating h1 {
+  margin-left: 10px;
+}
+#Poster-details .poster-details .poster-item__actions .star-rating i {
+  font-size: 30px;
+}
+#Poster-details .poster-details .poster-item__actions .star-rating:hover {
+  cursor: pointer;
+}
 #Poster-details .poster-details .poster-item__content__top {
   padding: 20px;
   background-color: #fbfbfb;
@@ -2614,6 +2672,91 @@ a:hover {
   #Poster-details .poster-details .poster-item__content .team-content .cast-member .cast-info .role {
     font-size: 18px;
   }
+}
+#Poster-details .poster-details .poster-item__content .comments-content h2 {
+  margin-bottom: 10px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  min-height: 100px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #282828;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comment-form button:hover {
+  background-color: #444;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-info {
+  margin-bottom: 10px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-info #comments-count {
+  font-size: 1.2rem;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment .comment-avatar {
+  margin-right: 10px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment .comment-avatar img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment .comment-content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment .comment-content p {
+  margin: 0;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment .comment-content .comment-user {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment .comment-content .comment-time {
+  font-size: 0.8rem;
+  color: #777;
+  margin-bottom: 5px;
+}
+#Poster-details .poster-details .poster-item__content .comments-content .comments-list .comment .comment-content .comment-text {
+  margin-top: 5px;
 }
 
 #Buy-ticket .poster-details img {
@@ -4005,6 +4148,7 @@ a:hover {
 }
 #Contact .contact-section .container .contact-wrapper .contact-form form .input-group input,
 #Contact .contact-section .container .contact-wrapper .contact-form form .input-group textarea {
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding: 15px;
   border: 1px solid #ccc;
