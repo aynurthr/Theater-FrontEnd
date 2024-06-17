@@ -14,4 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById(target).style.display = "block";
     });
   });
+
+  // set the initial state to show the reviews tab
+  document
+    .querySelector(".tab[data-tab='user-reviews']")
+    .classList.add("active");
+  document.getElementById("user-reviews").style.display = "block";
 });
