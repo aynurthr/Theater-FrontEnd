@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Poster Details</title>
     <link rel="stylesheet" href="../../sass/main.css" />
-    <link rel="icon" type="image/x-icon" href="../../media/icons/theater.svg" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/media/icons/theater.svg"
+    />
   </head>
   <body id="Poster-details">
     <section class="navbar">
       <div class="container">
         <div class="navbar__menu">
           <a class="navbar__logo" href="../../pages/home/index.html">
-            <img src="../../media/icons/theater.svg" alt="Theater logo" />
+            <img
+              src="../../assets/media/icons/theater.svg"
+              alt="Theater logo"
+            />
           </a>
           <div>
             <a class="navbar__text" href="../home/index.html">Home</a>
@@ -32,7 +39,7 @@
           >
         </div>
         <div class="navbar__burger" id="burger-btn">
-          <img src="../../media/icons/burger.svg" alt="Burger icon" />
+          <img src="../../assets/media/icons/burger.svg" alt="Burger icon" />
         </div>
       </div>
       <div class="sidebar-menu">
@@ -46,26 +53,32 @@
       </div>
     </section>
     <section class="poster-details">
-      <img class="poster-image" src="" alt="Poster Image" />
+      <img
+        class="poster-image"
+        src="../../assets/media/images/premiere1.jpg"
+        alt="Poster Image"
+      />
       <div class="poster-item__content">
         <div class="poster-item__content__top">
           <div class="container">
             <div class="poster-item__content__top__left">
-              <h1></h1>
-              <div class="genre"></div>
+              <h1>Childhood Reflections</h1>
+              <div class="genre">Drama in One Act</div>
             </div>
             <div class="poster-item__content__top__middle">
               <div>
                 <p>Duration</p>
-                <div class="duration"></div>
+                <div class="duration">1h 40min</div>
               </div>
               <div>
                 <p>Age Limit</p>
-                <div class="age"></div>
+                <div class="age">14+</div>
               </div>
             </div>
             <div class="poster-item__content__top__right">
-              <a id="buy-ticket-btn" href="#">Buy Ticket</a>
+              <a id="buy-ticket-btn" href="../buy-ticket/index.html"
+                >Buy Ticket</a
+              >
             </div>
           </div>
         </div>
@@ -74,35 +87,44 @@
           <div class="container">
             <p>Watched the show? Review it now and let us know how we did!</p>
             <div class="action-button" id="toggle-icon">
-              <i class="fa-regular fa-eye" style="color: #282828"></i>
+              <i
+                class="fa-regular fa-eye"
+                style="color: #282828"
+                aria-hidden="true"
+              ></i>
             </div>
             <div class="star-rating">
               <i
                 class="fa-regular fa-star"
                 style="color: #282828"
                 data-value="1"
+                aria-hidden="true"
               ></i>
               <i
                 class="fa-regular fa-star"
                 style="color: #282828"
                 data-value="2"
+                aria-hidden="true"
               ></i>
               <i
                 class="fa-regular fa-star"
                 style="color: #282828"
                 data-value="3"
+                aria-hidden="true"
               ></i>
               <i
                 class="fa-regular fa-star"
                 style="color: #282828"
                 data-value="4"
+                aria-hidden="true"
               ></i>
               <i
                 class="fa-regular fa-star"
                 style="color: #282828"
                 data-value="5"
+                aria-hidden="true"
               ></i>
-              <h1 class="rating"></h1>
+              <h1 class="rating">3.8</h1>
             </div>
           </div>
         </div>
@@ -118,11 +140,59 @@
                 <a href="#" class="tab" data-tab="comments">Feedback</a>
               </div>
               <div class="tabs__content">
-                <div class="tab-content" id="about">
-                  <p></p>
+                <div class="tab-content" id="about" style="display: block">
+                  <p>
+                    Childhood Reflections.<br /><br />Based on the film scripts
+                    'Ivan's Childhood' and 'Mirror'.<br /><br />Ivan is a child
+                    consumed by adult passions. He lost his childhood to war and
+                    died because he lived like an adult. The story is built
+                    around the character of the boy, but there are episodes that
+                    reveal his childish traits. A precise detail is found in the
+                    story — playing at war — what could be scarier! Everything
+                    here is very deep, terrifying, and truthful, leaving no room
+                    for adventurous romance...<br /><br />Ivan dreams of the
+                    life he is deprived of, an ordinary childhood. In his
+                    dreams, there is a normal happy childhood. In real life —
+                    that terrible absurdity occurs when a child is forced to
+                    fight.
+                  </p>
                 </div>
                 <div class="tab-content" id="team" style="display: none">
-                  <div class="team-content"></div>
+                  <div class="team-content">
+                    <div class="cast-member">
+                      <img
+                        src="../../assets/media/images/actors/John-Smith.jpg"
+                        alt="John Smith"
+                      />
+                      <div class="cast-info">
+                        <p class="role">Ivan</p>
+                        <h3>John Smith</h3>
+                        <p>Honored Artist of the Republic of Tatarstan</p>
+                      </div>
+                    </div>
+                    <div class="cast-member">
+                      <img
+                        src="../../assets/media/images/actors/Michael-Brown.jpg"
+                        alt="Michael Brown"
+                      />
+                      <div class="cast-info">
+                        <p class="role">Mother</p>
+                        <h3>Michael Brown</h3>
+                        <p>Merited Artist of the Republic of Tatarstan</p>
+                      </div>
+                    </div>
+                    <div class="cast-member">
+                      <img
+                        src="../../assets/media/images/actors/Sophia-Davis.jpg"
+                        alt="Sophia Davis"
+                      />
+                      <div class="cast-info">
+                        <p class="role">Father</p>
+                        <h3>Sophia Davis</h3>
+                        <p>Honored Artist of the Republic of Tatarstan</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="tab-content" id="comments" style="display: none">
                   <div class="comments-content">
@@ -131,14 +201,45 @@
                       <textarea
                         id="comment-input"
                         placeholder="Add a comment..."
-                        required
+                        required=""
                       ></textarea>
                       <button type="submit">Post Comment</button>
                     </form>
                     <div class="comments-info">
-                      <p id="comments-count">0 Comments</p>
+                      <p id="comments-count">2 Comments</p>
                     </div>
-                    <div class="comments-list" id="comments-list"></div>
+                    <div class="comments-list" id="comments-list">
+                      <div class="comment">
+                        <div class="comment-avatar">
+                          <img
+                            src="../../assets/media/images/premiere1.jpg"
+                            alt="alice_wonder"
+                          />
+                        </div>
+                        <div class="comment-content">
+                          <div class="comment-user">alice_wonder</div>
+                          <div class="comment-time">9/27/2025, 1:50:00 PM</div>
+                          <div class="comment-text">
+                            Some parts were slow, but overall a good watch.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="comment">
+                        <div class="comment-avatar">
+                          <img
+                            src="../../assets/media/images/premiere1.jpg"
+                            alt="alice_wonder"
+                          />
+                        </div>
+                        <div class="comment-content">
+                          <div class="comment-user">alice_wonder</div>
+                          <div class="comment-time">9/27/2025, 11:30:00 AM</div>
+                          <div class="comment-text">
+                            A deep and thought-provoking play.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -153,7 +254,10 @@
         <div class="footer-top">
           <div class="footer-top__left">
             <div class="footer-logo">
-              <img src="../../media/icons/theater.svg" alt="Theater logo" />
+              <img
+                src="../../assets/media/icons/theater.svg"
+                alt="Theater logo"
+              />
               <h3>Kazan State Theater of The Young Spectators</h3>
             </div>
             <table>
@@ -175,14 +279,18 @@
             <p>Join our community</p>
             <div class="footer-social-icons">
               <a href="#"
-                ><img src="../../media/icons/youtube.svg" alt="Youtube Logo"
-              /></a>
-              <a href="#"
-                ><img src="../../media/icons/twitter.svg" alt="Twitter Logo"
+                ><img
+                  src="../../assets/media/icons/youtube.svg"
+                  alt="Youtube Logo"
               /></a>
               <a href="#"
                 ><img
-                  src="../../media/icons/instagram.svg"
+                  src="../../assets/media/icons/twitter.svg"
+                  alt="Twitter Logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../../assets/media/icons/instagram.svg"
                   alt="Instagram Logo"
               /></a>
             </div>
@@ -221,10 +329,9 @@
       src="https://kit.fontawesome.com/277e46d269.js"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="../../common/posters.js"></script>
-    <script type="module" src="../../common/users.js"></script>
-
+    <!-- <script type="module" src="../../assets/common/posters.js"></script>
+    <script type="module" src="../../assets/common/users.js"></script> -->
     <script type="module" src="script.js"></script>
-    <script src="../../common/sidebar.js"></script>
+    <script src="../../assets/common/sidebar.js"></script>
   </body>
 </html>

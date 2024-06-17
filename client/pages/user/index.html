@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Premieres</title>
+    <title>User Profile</title>
     <link rel="stylesheet" href="../../sass/main.css" />
     <link
       rel="icon"
@@ -11,7 +11,7 @@
       href="../../assets/media/icons/theater.svg"
     />
   </head>
-  <body id="Premieres">
+  <body id="User">
     <section class="navbar">
       <div class="container">
         <div class="navbar__menu">
@@ -52,123 +52,67 @@
         <a href="../register/index.html" class="btn btn--register">Register</a>
       </div>
     </section>
-    <section class="shows">
+
+    <section class="profile">
       <div class="container">
-        <div class="search-bar">
-          <input type="text" placeholder="Search premieres..." />
+        <div class="profile-header">
+          <img
+            src="../../assets/media/images/actors/Emma-Johnson.jpg"
+            alt="User Profile Picture"
+            id="user-profile-pic"
+            class="profile-pic"
+          />
+          <h1 id="user-username">John Doe</h1>
         </div>
-        <h1>Premieres</h1>
-        <div class="shows-wrapper" id="shows-wrapper">
-          <div class="shows-item" data-id="3">
-            <img src="../../assets/media/images/premiere1.jpg" alt="show3" />
-            <div class="shows-item__shadow"></div>
-            <div class="shows-item__top">
+        <div class="profile-content">
+          <div class="tabs">
+            <button class="tab active" data-tab="user-reviews">
+              Your Reviews
+            </button>
+            <button class="tab" data-tab="user-tickets">Your Tickets</button>
+          </div>
+          <div class="tab-content" id="user-reviews">
+            <div class="review">
+              <h3>Childhood Reflections</h3>
               <date>24 July, 18:30</date>
-              <age>14+</age>
-            </div>
-            <div class="shows-item__bottom">
-              <h5>Childhood Reflections</h5>
-              <p class="description">
-                Childhood Reflections. Based on the film scripts 'Ivan's
-                Childhood' and 'Mirror'. Ivan is a child consumed by adult
-                passions. He lost his childhood to war and died because he lived
-                like an adult. Th...
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <p>
+                Amazing performance! Really enjoyed the storyline and acting.
               </p>
             </div>
-          </div>
-          <div class="shows-item" data-id="6">
-            <img src="../../assets/media/images/premiere1.jpg" alt="show6" />
-            <div class="shows-item__shadow"></div>
-            <div class="shows-item__top">
+            <div class="review">
+              <h3>Lost Dreams</h3>
               <date>28 April, 18:30</date>
-              <age>14+</age>
-            </div>
-            <div class="shows-item__bottom">
-              <h5>Lost Dreams</h5>
-              <p class="description">
-                Lost Dreams. Based on the film scripts 'Ivan's Childhood' and
-                'Mirror'. Ivan is a child consumed by adult passions. He lost
-                his childhood to war and died because he lived like an adult.
-                The story is...
-              </p>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>A masterpiece. The visuals and the music were top-notch.</p>
             </div>
           </div>
-          <div class="shows-item" data-id="2">
-            <img src="../../assets/media/images/premiere2.jpg" alt="show2" />
-            <div class="shows-item__shadow"></div>
-            <div class="shows-item__top">
+          <div class="tab-content" id="user-tickets" style="display: none">
+            <div class="ticket">
+              <h3>The Lost Childhood</h3>
               <date>23 May, 18:30</date>
-              <age>14+</age>
             </div>
-            <div class="shows-item__bottom">
-              <h5>The Lost Childhood</h5>
-              <p class="description">
-                The Lost Childhood. Based on the film scripts 'Ivan's Childhood'
-                and 'Mirror'. Ivan is a child consumed by adult passions. He
-                lost his childhood to war and died because he lived like an
-                adult. The s...
-              </p>
-            </div>
-          </div>
-          <div class="shows-item" data-id="4">
-            <img src="../../assets/media/images/premiere1.jpg" alt="show4" />
-            <div class="shows-item__shadow"></div>
-            <div class="shows-item__top">
+            <div class="ticket">
+              <h3>Childhood Shadows</h3>
               <date>25 May, 18:30</date>
-              <age>14+</age>
-            </div>
-            <div class="shows-item__bottom">
-              <h5>Childhood Shadows</h5>
-              <p class="description">
-                Childhood Shadows. Based on the film scripts 'Ivan's Childhood'
-                and 'Mirror'. Ivan is a child consumed by adult passions. He
-                lost his childhood to war and died because he lived like an
-                adult. The st...
-              </p>
             </div>
           </div>
-          <div class="shows-item" data-id="5">
-            <img src="../../assets/media/images/premiere1.jpg" alt="show5" />
-            <div class="shows-item__shadow"></div>
-            <div class="shows-item__top">
-              <date>26 May, 18:30</date>
-              <age>14+</age>
-            </div>
-            <div class="shows-item__bottom">
-              <h5>The Forgotten Childhood</h5>
-              <p class="description">
-                The Forgotten Childhood. Based on the film scripts 'Ivan's
-                Childhood' and 'Mirror'. Ivan is a child consumed by adult
-                passions. He lost his childhood to war and died because he lived
-                like an adult. ...
-              </p>
-            </div>
-          </div>
-          <div class="shows-item" data-id="1">
-            <img src="../../assets/media/images/premiere1.jpg" alt="show1" />
-            <div class="shows-item__shadow"></div>
-            <div class="shows-item__top">
-              <date>23 September, 18:30</date>
-              <age>14+</age>
-            </div>
-            <div class="shows-item__bottom">
-              <h5>Ivan's Childhood</h5>
-              <p class="description">
-                The premiere took place on April 15, 2021. Based on the film
-                scripts 'Ivan's Childhood' and 'Mirror'. Ivan is a child
-                consumed by adult passions. He lost his childhood to war and
-                died because he liv...
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="pagination">
-          <button id="prev-btn" disabled>Previous</button>
-          <span id="page-num">1</span>
-          <button id="next-btn">Next</button>
         </div>
       </div>
     </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
@@ -245,8 +189,10 @@
         </div>
       </div>
     </footer>
-    <!-- <script type="module" src="../../assets/common/posters.js"></script> -->
+    <script
+      src="https://kit.fontawesome.com/277e46d269.js"
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="script.js"></script>
-    <script src="../../assets/common/sidebar.js"></script>
   </body>
 </html>

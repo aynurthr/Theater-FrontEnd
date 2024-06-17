@@ -1,68 +1,5 @@
-import { posters } from "../../common/posters.js";
-import { actors } from "../../common/actors.js";
-import { users } from "../../common/users.js";
-
 document.addEventListener("DOMContentLoaded", function () {
-  const urlParams = new URLSearchParams(window.location.search);
-  const id = urlParams.get("id");
-
-  if (id && posters[id]) {
-    const poster = posters[id];
-    document.querySelector("h1").innerText = poster.title;
-    document.querySelector(".genre").innerText = poster.genre;
-    document.querySelector(".duration").innerText = poster.duration;
-    document.querySelector(".age").innerText = poster.age;
-    document.querySelector("#about p").innerHTML = poster.description;
-    document.querySelector(".poster-image").src = poster.imageSrc;
-    document.querySelector(".rating").innerHTML = poster.rating;
-
-    const buyTicketBtn = document.getElementById("buy-ticket-btn");
-    buyTicketBtn.href = `../buy-ticket/index.html?id=${id}`;
-
-    // to change the page title
-    document.title = `${poster.title} │ About`;
-
-    // populate cast
-    const teamContent = document.querySelector(".team-content");
-    poster.cast.forEach((castMember) => {
-      const actor = actors[castMember.actor];
-      if (actor) {
-        const castElement = document.createElement("div");
-        castElement.classList.add("cast-member");
-        castElement.innerHTML = `
-          <img src="${actor.imageSrc}" alt="${actor.fullName}" />
-          <div class="cast-info">
-          <p class="role">${castMember.role}</p>
-            <h3>${actor.fullName}</h3>
-            <p>${actor.title}</p>
-          </div>
-        `;
-        teamContent.appendChild(castElement);
-      }
-    });
-
-    // populate comments
-    renderComments();
-
-    // comment form submission
-    const commentForm = document.getElementById("comment-form");
-    commentForm.addEventListener("submit", function (event) {
-      event.preventDefault();
-      const commentInput = document.getElementById("comment-input");
-      const newComment = {
-        userId: 1, // Replace with the current logged-in user's ID
-        comment: commentInput.value,
-        time: new Date(),
-      };
-      poster.comments.push(newComment);
-      commentInput.value = "";
-      renderComments();
-    });
-  } else {
-    document.querySelector(".container").innerHTML = "<p>Poster not found.</p>";
-  }
-
-  // tab functionality
+  // Tab functionality
   const tabs = document.querySelectorAll(".tab");
   const tabContents = document.querySelectorAll(".tab-content");
 
@@ -82,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   tabs[0].classList.add("active");
   tabContents[0].style.display = "block";
 
-  // toggle eye icon logic
+  // Toggle eye icon logic
   const toggleIcon = document.getElementById("toggle-icon");
   let isIconActive = false;
   toggleIcon.addEventListener("click", function () {
@@ -95,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     highlightStars(currentRating);
   });
 
-  // star Rating Logic
+  // Star rating logic
   const stars = document.querySelectorAll(".star-rating i");
   let currentRating = 0;
 
@@ -150,39 +87,5 @@ document.addEventListener("DOMContentLoaded", function () {
       toggleIcon.innerHTML =
         '<i class="fa-regular fa-eye" style="color: #282828"></i>';
     }
-  }
-
-  // to sort comments based on date
-  function renderComments() {
-    const commentsList = document.getElementById("comments-list");
-    const commentsCount = document.getElementById("comments-count");
-    const comments = posters[id].comments.sort(
-      (a, b) => new Date(b.time) - new Date(a.time)
-    );
-    commentsCount.textContent = `${comments.length} Comments`;
-
-    commentsList.innerHTML = "";
-    comments.forEach((comment) => {
-      const user = users[comment.userId];
-      if (!user) {
-        console.error(`User with ID ${comment.userId} not found.`);
-        return;
-      }
-      const commentElement = document.createElement("div");
-      commentElement.className = "comment";
-      commentElement.innerHTML = `
-        <div class="comment-avatar">
-          <img src="${user.profilePicSrc}" alt="${user.username}">
-        </div>
-        <div class="comment-content">
-          <div class="comment-user">${user.username}</div>
-          <div class="comment-time">${new Date(
-            comment.time
-          ).toLocaleString()}</div>
-          <div class="comment-text">${comment.comment}</div>
-        </div>
-      `;
-      commentsList.appendChild(commentElement);
-    });
   }
 });

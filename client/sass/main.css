@@ -595,14 +595,14 @@ a:hover {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  background: url("../media/images/hero-background.png") no-repeat center;
+  background: url("../assets/media/images/hero-background.png") no-repeat center;
   background-size: cover;
 }
 #Home .hero__top__shadow {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url("../media/images/shadow.png") no-repeat center;
+  background: url("../assets/media/images/shadow.png") no-repeat center;
   background-size: cover;
 }
 #Home .hero__top .container {
@@ -816,7 +816,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../media/images/premiere_shadow.png") no-repeat center;
+  background: url("../assets/media/images/premiere_shadow.png") no-repeat center;
   background-size: cover;
   z-index: 1;
 }
@@ -2172,7 +2172,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url("../media/images/premiere_shadow.png") no-repeat center;
+  background: url("../assets/media/images/premiere_shadow.png") no-repeat center;
   background-size: cover;
   z-index: 1;
 }
@@ -4231,4 +4231,97 @@ a:hover {
 }
 #Contact .contact-section .container .contact-wrapper .contact-form form .btn--submit:hover {
   background-color: #f9111b;
+}
+
+#User .container {
+  padding: 20px;
+}
+#User .profile-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+#User .profile-header .profile-pic {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+#User .profile-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+#User .profile-content .tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+#User .profile-content .tabs .tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  background: #f9f9f9;
+  font-weight: 600;
+}
+#User .profile-content .tabs .tab:not(:last-child) {
+  border-right: none;
+}
+#User .profile-content .tabs .tab.active {
+  background: #fff;
+  border-bottom: 1px solid #fff;
+}
+#User .profile-content .tab-content {
+  display: none;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+#User .profile-content .tab-content.active {
+  display: block;
+}
+#User .profile-content .tab-content .review,
+#User .profile-content .tab-content .ticket {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #eee;
+  background: #fafafa;
+}
+#User .profile-content .tab-content .review h3,
+#User .profile-content .tab-content .ticket h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+#User .profile-content .tab-content .review date,
+#User .profile-content .tab-content .ticket date {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+#User .profile-content .tab-content .review .rating,
+#User .profile-content .tab-content .ticket .rating {
+  margin-bottom: 10px;
+}
+#User .profile-content .tab-content .review .rating i,
+#User .profile-content .tab-content .ticket .rating i {
+  color: #ffd700;
+  margin-right: 5px;
+}
+#User .profile-content .tab-content .review .rating .fa-regular,
+#User .profile-content .tab-content .ticket .rating .fa-regular {
+  color: #ccc;
+}
+#User .profile-content .tab-content .review p,
+#User .profile-content .tab-content .ticket p {
+  margin: 0;
+  font-size: 14px;
 }

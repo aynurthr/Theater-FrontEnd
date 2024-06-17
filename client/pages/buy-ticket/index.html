@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Buy Ticket</title>
     <link rel="stylesheet" href="../../sass/main.css" />
-    <link rel="icon" type="image/x-icon" href="../../media/icons/theater.svg" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../../assets/media/icons/theater.svg"
+    />
   </head>
   <body id="Buy-ticket">
     <section class="navbar">
       <div class="container">
         <div class="navbar__menu">
           <a class="navbar__logo" href="../../pages/home/index.html">
-            <img src="../../media/icons/theater.svg" alt="Theater logo" />
+            <img
+              src="../../assets/media/icons/theater.svg"
+              alt="Theater logo"
+            />
           </a>
           <div>
             <a class="navbar__text" href="../home/index.html">Home</a>
@@ -32,7 +39,7 @@
           >
         </div>
         <div class="navbar__burger" id="burger-btn">
-          <img src="../../media/icons/burger.svg" alt="Burger icon" />
+          <img src="../../assets/media/icons/burger.svg" alt="Burger icon" />
         </div>
       </div>
       <div class="sidebar-menu">
@@ -46,14 +53,18 @@
       </div>
     </section>
     <section class="poster-details">
-      <img class="poster-image" src="" alt="Poster Image" />
+      <img
+        class="poster-image"
+        src="../../assets/media/images/premiere1.jpg"
+        alt="Poster Image"
+      />
       <div class="poster-item__content">
         <div class="container">
           <div class="poster-item__content__left">
-            <h1 id="poster-title">Buy Ticket</h1>
+            <h1 id="poster-title">Childhood Reflections</h1>
           </div>
           <div class="poster-item__content__price">
-            <h1 id="total-price"></h1>
+            <h1 id="total-price">0$</h1>
           </div>
         </div>
       </div>
@@ -63,7 +74,20 @@
         <div class="booking__left">
           <h2>Select Show Date</h2>
           <div class="booking__dates">
-            <!-- Dates will be inserted here by JavaScript -->
+            <button
+              class="booking__date active"
+              data-date="2024-07-24T14:30:00.000Z"
+            >
+              24 July, 18:30</button
+            ><button class="booking__date" data-date="2025-06-24T14:30:00.000Z">
+              24 June, 18:30</button
+            ><button class="booking__date" data-date="2025-08-24T14:30:00.000Z">
+              24 August, 18:30</button
+            ><button class="booking__date" data-date="2025-10-24T14:30:00.000Z">
+              24 October, 18:30</button
+            ><button class="booking__date" data-date="2025-05-24T14:30:00.000Z">
+              24 May, 18:30
+            </button>
           </div>
           <p class="booking__info">
             Attention! The selected tickets must be paid for by credit card
@@ -78,7 +102,699 @@
         <div class="booking__right">
           <h2>Seating Chart</h2>
           <div class="booking__seating">
-            <!-- Seating chart will be here -->
+            <div class="seating-chart">
+              <div class="seating-row">
+                <div>1</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>2</div>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="11"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="12"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="13"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="2"
+                  data-seat="14"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>3</div>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="11"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="12"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="13"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="14"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="15"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="3"
+                  data-seat="16"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>4</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>5</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>6</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>7</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>8</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>9</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <div class="seating-row">
+                <div>10</div>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="1"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="2"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="3"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="4"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="5"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="6"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="7"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="8"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="9"
+                  data-price="10"
+                ></span>
+                <span
+                  class="seat"
+                  data-row="1"
+                  data-seat="10"
+                  data-price="10"
+                ></span>
+              </div>
+              <!-- Add more rows as needed -->
+            </div>
           </div>
         </div>
       </div>
@@ -88,7 +804,10 @@
         <div class="footer-top">
           <div class="footer-top__left">
             <div class="footer-logo">
-              <img src="../../media/icons/theater.svg" alt="Theater logo" />
+              <img
+                src="../../assets/media/icons/theater.svg"
+                alt="Theater logo"
+              />
               <h3>Kazan State Theater of The Young Spectators</h3>
             </div>
             <table>
@@ -110,14 +829,18 @@
             <p>Join our community</p>
             <div class="footer-social-icons">
               <a href="#"
-                ><img src="../../media/icons/youtube.svg" alt="Youtube Logo"
-              /></a>
-              <a href="#"
-                ><img src="../../media/icons/twitter.svg" alt="Twitter Logo"
+                ><img
+                  src="../../assets/media/icons/youtube.svg"
+                  alt="Youtube Logo"
               /></a>
               <a href="#"
                 ><img
-                  src="../../media/icons/instagram.svg"
+                  src="../../assets/media/icons/twitter.svg"
+                  alt="Twitter Logo"
+              /></a>
+              <a href="#"
+                ><img
+                  src="../../assets/media/icons/instagram.svg"
                   alt="Instagram Logo"
               /></a>
             </div>
@@ -152,9 +875,9 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="../../common/halls.js"></script>
-    <script type="module" src="../../common/posters.js"></script>
+    <script type="module" src="../../assets/common/halls.js"></script>
+    <script type="module" src="../../assets/common/posters.js"></script>
     <script type="module" src="script.js"></script>
-    <script src="../../common/sidebar.js"></script>
+    <script src="../../assets/common/sidebar.js"></script>
   </body>
 </html>

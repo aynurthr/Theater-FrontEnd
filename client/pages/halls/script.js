@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   const hall1Images = [
-    "../../media/images/first-hall/hall1-1.webp",
-    "../../media/images/first-hall/hall1-2.jpg",
+    "../../assets/media/images/first-hall/hall1-1.webp",
+    "../../assets/media/images/first-hall/hall1-2.jpg",
   ];
   const hall2Images = [
-    "../../media/images/second-hall/hall2-1.jpg",
-    "../../media/images/second-hall/hall2-2.jpg",
+    "../../assets/media/images/second-hall/hall2-1.jpg",
+    "../../assets/media/images/second-hall/hall2-2.jpg",
   ];
 
   let hall1Index = 0;

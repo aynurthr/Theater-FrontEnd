@@ -8,14 +8,15 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      background: url("../media/images/hero-background.png") no-repeat center;
+      background: url("../assets/media/images/hero-background.png") no-repeat
+        center;
       background-size: cover;
 
       &__shadow {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url("../media/images/shadow.png") no-repeat center;
+        background: url("../assets/media/images/shadow.png") no-repeat center;
         background-size: cover;
       }
 
@@ -205,8 +206,8 @@
           left: 0;
           width: 100%;
           height: 100%;
-          background: url("../media/images/premiere_shadow.png") no-repeat
-            center;
+          background: url("../assets/media/images/premiere_shadow.png")
+            no-repeat center;
           background-size: cover;
           z-index: 1;
         }
